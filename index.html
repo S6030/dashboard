@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>My Exercises – Dashboard</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -20,35 +21,43 @@
       margin: 0;
       font-size: 24px;
     }
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 16px;
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
       padding: 16px;
     }
     .card {
-      background: white;
+      width: 100%;
+      max-width: 360px;
+      margin: 8px 0;
+      padding: 16px;
       border-radius: 8px;
+      color: white;
+      text-align: left;
       box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-      padding: 24px 12px;
       transition: transform .1s, box-shadow .1s;
     }
     .card:hover {
-      transform: translateY(-4px);
+      transform: translateY(-2px);
       box-shadow: 0 4px 12px rgba(0,0,0,0.15);
     }
     .card a {
       text-decoration: none;
-      color: #4a90e2;
-      font-size: 18px;
+      color: white;
+      font-size: 20px;
       font-weight: bold;
       display: block;
+      margin-bottom: 4px;
     }
     .card p {
-      margin: 8px 0 0;
-      color: #555;
+      margin: 0;
       font-size: 14px;
     }
+    .letter { background: #4a90e2; }        /* blue */
+    .angle  { background: #28a745; }        /* green */
+    .subtract { background: #dc3545; }      /* red */
+    .math   { background: #ffc107; color: #333; } /* yellow */
   </style>
 </head>
 <body>
@@ -57,20 +66,20 @@
     <h1>My Exercises – Dashboard</h1>
   </header>
 
-  <div class="grid">
-    <div class="card">
+  <div class="container">
+    <div class="card letter">
       <a href="https://s6030.github.io/Letter-Rank-Drill/" target="_blank">Letter Rank Drill</a>
       <p>Rank ↔ Letter</p>
     </div>
-    <div class="card">
+    <div class="card angle">
       <a href="https://s6030.github.io/Angle-Recognition-Quiz/" target="_blank">Angle Recognition Quiz</a>
       <p>Identify the angle</p>
     </div>
-    <div class="card">
+    <div class="card subtract">
       <a href="https://s6030.github.io/subtraction-drill/" target="_blank">Fast Subtraction Drill</a>
       <p>Subtraction speed test</p>
     </div>
-    <div class="card">
+    <div class="card math">
       <a href="https://s6030.github.io/maths-drill/" target="_blank">Math Drill</a>
       <p>Tables, squares & primes</p>
     </div>
