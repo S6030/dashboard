@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Exercises – Dashboard</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f0f4f8;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+    header {
+      background: #4a90e2;
+      color: white;
+      padding: 16px;
+    }
+    h1 {
+      margin: 0;
+      font-size: 24px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 16px;
+      padding: 16px;
+    }
+    .card {
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      padding: 24px 12px;
+      transition: transform .1s, box-shadow .1s;
+    }
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
+    .card a {
+      text-decoration: none;
+      color: #4a90e2;
+      font-size: 18px;
+      font-weight: bold;
+      display: block;
+    }
+    .card p {
+      margin: 8px 0 0;
+      color: #555;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>My Exercises – Dashboard</h1>
+  </header>
+
+  <div class="grid">
+    <div class="card">
+      <a href="https://s6030.github.io/Letter-Rank-Drill/" target="_blank">Letter Rank Drill</a>
+      <p>Rank ↔ Letter</p>
+    </div>
+    <div class="card">
+      <a href="https://s6030.github.io/Angle-Recognition-Quiz/" target="_blank">Angle Recognition Quiz</a>
+      <p>Identify the angle</p>
+    </div>
+    <div class="card">
+      <a href="https://s6030.github.io/subtraction-drill/" target="_blank">Fast Subtraction Drill</a>
+      <p>Subtraction speed test</p>
+    </div>
+    <div class="card">
+      <a href="https://s6030.github.io/maths-drill/" target="_blank">Math Drill</a>
+      <p>Tables, squares & primes</p>
+    </div>
+  </div>
+
+</body>
+</html>
